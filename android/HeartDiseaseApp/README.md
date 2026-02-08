@@ -6,12 +6,18 @@
 
 ## 🔗 روابط المشاريع
 
+<div align="center">
+
 | المشروع | التقنية | الرابط | الحالة |
-|---------|---------|--------|--------|
-| 🏠 **Hub** | Documentation | [CardioGuard-Hub](https://github.com/HazemAlhajIhmid/CardioGuard-Hub) | 📚 Docs |
-| 🌐 **Frontend** | SvelteKit | [Frontend Repo](https://github.com/HazemAlhajIhmid/Master-Thesis--CardioGuard---Early-Detection-of-Heart-Disease-System) | ✅ Live |
-| 🖥️ **Backend** | ASP.NET Core | [Backend API](https://github.com/HazemAlhajIhmid/CardioGuard-Backend-API) | ✅ Live |
-| 📱 **Android** | Kotlin | [Android App](https://github.com/HazemAlhajIhmid/CardioGuard-Android-App) | ✅ Live |
+|:-------:|:-------:|:------:|:------:|
+| 🏠 Hub | Documentation | **[CardioGuard-Hub](https://github.com/HazemAlhajIhmid/CardioGuard-Hub)** | 📚 Docs |
+| 🌐 Frontend | SvelteKit | **[Web App](https://github.com/HazemAlhajIhmid/Master-Thesis--CardioGuard---Early-Detection-of-Heart-Disease-System)** | ✅ Live |
+| 🖥️ Backend | ASP.NET Core | **[Backend API](https://github.com/HazemAlhajIhmid/CardioGuard-Backend-API)** | ✅ Live |
+| 📱 Android | Kotlin | **[Android App](https://github.com/HazemAlhajIhmid/CardioGuard-Android-App)** | ✅ Live |
+
+**🌐 Live Demo:** [heart-disease-detection.vercel.app](https://heart-disease-detection.vercel.app/)
+
+</div>
 
 ---
 
