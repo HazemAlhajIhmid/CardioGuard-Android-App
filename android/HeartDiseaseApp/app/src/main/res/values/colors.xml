@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary">#3B82F6</color> <!-- Blue 500 -->
+    <color name="primary_light">#DBEAFE</color> <!-- Blue 100 -->
+    <color name="primary_dark">#2563EB</color> <!-- Blue 600 -->
+    <color name="primary_extra_light">#EFF6FF</color> <!-- Blue 50 -->
+    
+    <!-- Secondary Colors -->
+    <color name="secondary">#10B981</color> <!-- Emerald 500 -->
+    <color name="secondary_light">#D1FAE5</color> <!-- Emerald 100 -->
+    <color name="secondary_extra_light">#ECFDF5</color> <!-- Emerald 50 -->
+    
+    <!-- Accent Colors -->
+    <color name="accent">#F59E0B</color> <!-- Amber 500 -->
+    <color name="accent_light">#FEF3C7</color> <!-- Amber 100 -->
+    <color name="accent_extra_light">#FFFBEB</color> <!-- Amber 50 -->
+    
+    <!-- Error/Alert Colors -->
+    <color name="error">#EF4444</color> <!-- Red 500 -->
+
+    <!-- Background Colors -->
+    <color name="background">#F9FAFB</color> <!-- Gray 50 -->
+    <color name="card_background">#FFFFFF</color> <!-- White -->
+    <color name="card_background_light">#F3F4F6</color> <!-- Gray 100 -->
+
+    <!-- Model Specific Colors -->
+    <color name="knn_background">#EFF6FF</color> <!-- Blue 50 -->
+    <color name="knn_primary">#3B82F6</color> <!-- Blue 500 -->
+    <color name="knn_text">#1E40AF</color> <!-- Blue 800 -->
+    
+    <color name="nb_background">#ECFDF5</color> <!-- Emerald 50 -->
+    <color name="nb_primary">#10B981</color> <!-- Emerald 500 -->
+    <color name="nb_text">#065F46</color> <!-- Emerald 800 -->
+    
+    <color name="dt_background">#FFFBEB</color> <!-- Amber 50 -->
+    <color name="dt_primary">#F59E0B</color> <!-- Amber 500 -->
+    <color name="dt_text">#92400E</color> <!-- Amber 800 -->
+
+    <!-- Text Colors -->
+    <color name="text_primary">#111827</color> <!-- Gray 900 -->
+    <color name="text_secondary">#6B7280</color> <!-- Gray 500 -->
+    <color name="text_on_primary">#FFFFFF</color> <!-- White -->
+
+    <!-- Basic Colors -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+</resources>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".RiskCalculatorActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        app:title="@string/title_activity_risk_calculator"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header Card -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/CalculatorHeaderCard">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:gravity="center">
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/calculator_title"
+                        android:textSize="22sp"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/calculator_subtitle"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="14sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Form Container -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <!-- Basic Information Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calculator_section_basic"
+                android:textSize="16sp"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Age -->
+            <LinearLayout style="@style/FormRow">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_age"
+                    style="@style/FormRow.TextInputLayout"
+                    android:hint="@string/hint_age">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <ImageView android:id="@+id/info_age" style="@style/InfoIcon"/>
+            </LinearLayout>
+
+            <!-- Sex -->
+            <LinearLayout style="@style/FormRow">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_sex"
+                    style="@style/FormRow.TextInputLayout.ExposedDropdown"
+                    android:hint="@string/hint_sex">
+                    <AutoCompleteTextView
+                        android:id="@+id/input_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <ImageView android:id="@+id/info_sex" style="@style/InfoIcon"/>
+            </LinearLayout>
+
+            <!-- Chest Pain -->
+            <LinearLayout style="@style/FormRow">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_cp"
+                    style="@style/FormRow.TextInputLayout.ExposedDropdown"
+                    android:hint="@string/hint_chest_pain">
+                    <AutoCompleteTextView
+                        android:id="@+id/input_cp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <ImageView android:id="@+id/info_cp" style="@style/InfoIcon"/>
+            </LinearLayout>
+
+            <!-- Vital Signs Section -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/card_background_light"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calculator_section_vitals"
+                android:textSize="16sp"
+                android:textColor="@color/secondary"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Trestbps -->
+            <LinearLayout style="@style/FormRow">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_trestbps"
+                    style="@style/FormRow.TextInputLayout"
+                    android:hint="@string/hint_trestbps">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_trestbps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <ImageView android:id="@+id/info_trestbps" style="@style/InfoIcon"/>
+            </LinearLayout>
+
+            <!-- Cholesterol -->
+            <LinearLayout style="@style/FormRow">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_chol"
+                    style="@style/FormRow.TextInputLayout"
+                    android:hint="@string/hint_cholesterol">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_chol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <ImageView android:id="@+id/info_chol" style="@style/InfoIcon"/>
+            </LinearLayout>
+
+            <!-- Fasting Blood Sugar -->
+            <LinearLayout style="@style/FormRow">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_fbs"
+                    style="@style/FormRow.TextInputLayout.ExposedDropdown"
+                    android:hint="@string/hint_fasting_blood_sugar">
+                    <AutoCompleteTextView
+                        android:id="@+id/input_fbs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <ImageView android:id="@+id/info_fbs" style="@style/InfoIcon"/>
+            </LinearLayout>
+
+            <!-- Rest ECG -->
+            <LinearLayout style="@style/FormRow">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_restecg"
+                    style="@style/FormRow.TextInputLayout.ExposedDropdown"
+                    android:hint="@string/hint_rest_ecg">
+                    <AutoCompleteTextView
+                        android:id="@+id/input_restecg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <ImageView android:id="@+id/info_restecg" style="@style/InfoIcon"/>
+            </LinearLayout>
+
+            <!-- Advanced Tests Section -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/card_background_light"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calculator_section_tests"
+                android:textSize="16sp"
+                android:textColor="@color/accent"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Max Heart Rate -->
+            <LinearLayout style="@style/FormRow">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_thalach"
+                    style="@style/FormRow.TextInputLayout"
+                    android:hint="@string/hint_max_heart_rate">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_thalach"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <ImageView android:id="@+id/info_thalach" style="@style/InfoIcon"/>
+            </LinearLayout>
+
+            <!-- Exercise Angina -->
+            <LinearLayout style="@style/FormRow">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_exang"
+                    style="@style/FormRow.TextInputLayout.ExposedDropdown"
+                    android:hint="@string/hint_exercise_angina">
+                    <AutoCompleteTextView
+                        android:id="@+id/input_exang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <ImageView android:id="@+id/info_exang" style="@style/InfoIcon"/>
+            </LinearLayout>
+
+            <!-- Oldpeak -->
+            <LinearLayout style="@style/FormRow">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_oldpeak"
+                    style="@style/FormRow.TextInputLayout"
+                    android:hint="@string/hint_oldpeak">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_oldpeak"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <ImageView android:id="@+id/info_oldpeak" style="@style/InfoIcon"/>
+            </LinearLayout>
+
+            <!-- Slope -->
+            <LinearLayout style="@style/FormRow">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_slope"
+                    style="@style/FormRow.TextInputLayout.ExposedDropdown"
+                    android:hint="@string/hint_slope">
+                    <AutoCompleteTextView
+                        android:id="@+id/input_slope"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <ImageView android:id="@+id/info_slope" style="@style/InfoIcon"/>
+            </LinearLayout>
+
+            <!-- CA -->
+            <LinearLayout style="@style/FormRow">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_ca"
+                    style="@style/FormRow.TextInputLayout.ExposedDropdown"
+                    android:hint="@string/hint_ca">
+                    <AutoCompleteTextView
+                        android:id="@+id/input_ca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <ImageView android:id="@+id/info_ca" style="@style/InfoIcon"/>
+            </LinearLayout>
+
+            <!-- Thal -->
+            <LinearLayout style="@style/FormRow">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_thal"
+                    style="@style/FormRow.TextInputLayout.ExposedDropdown"
+                    android:hint="@string/hint_thal">
+                    <AutoCompleteTextView
+                        android:id="@+id/input_thal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <ImageView android:id="@+id/info_thal" style="@style/InfoIcon"/>
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_predict"
+                style="@style/PredictButton"
+                android:text="@string/calculator_button_predict"/>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:indeterminateTint="@color/primary"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+
+            </LinearLayout>
+            <!-- End of Form Container -->
+
+        </LinearLayout>
+        <!-- End of ScrollView Content -->
+    </ScrollView>
+</LinearLayout>

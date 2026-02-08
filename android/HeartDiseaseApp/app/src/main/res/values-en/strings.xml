@@ -1,0 +1,205 @@
+<resources>
+    <!-- App & Activity Titles -->
+    <string name="app_name">CardioGuard</string>
+    <string name="title_activity_risk_calculator">Risk Calculator</string>
+    <string name="title_activity_results">Assessment Results</string>
+    <string name="title_activity_about">About Project</string>
+
+    <!-- Main Activity -->
+    <string name="main_header_title">Early Detection of Heart Disease</string>
+    <string name="main_header_subtitle">An intelligent system based on machine learning algorithms to predict the risk of infection.</string>
+    <string name="main_section_model_accuracy">Model Accuracy</string>
+    <string name="main_section_dataset_info">Dataset Information</string>
+    <string name="main_label_records">Records</string>
+    <string name="main_label_models">Models</string>
+    <string name="main_button_start_assessment">Start Assessment Now</string>
+    <string name="main_button_about">About Project</string>
+
+    <!-- About Activity -->
+    <string name="about_title">About the CardioGuard Project</string>
+    <string name="about_description">This project is part of a Master\'s thesis in Data Science, aimed at developing an intelligent system to aid in the early detection of heart disease.</string>
+    <string name="about_section_methodology_title">Research Methodology</string>
+    <string name="about_methodology_1_title">Data Collection</string>
+    <string name="about_methodology_1_desc">Utilized the Heart Disease dataset from the UCI Machine Learning Repository.</string>
+    <string name="about_methodology_2_title">Data Preprocessing</string>
+    <string name="about_methodology_2_desc">Cleaned data, handled missing values, and normalized features to improve model performance.</string>
+    <string name="about_methodology_3_title">Model Training</string>
+    <string name="about_methodology_3_desc">Trained three different machine learning models: K-Nearest Neighbors, Naive Bayes, and Decision Tree.</string>
+    <string name="about_methodology_4_title">Evaluation</string>
+    <string name="about_methodology_4_desc">Evaluated model performance using Accuracy, Precision, Recall, and F1-Score metrics.</string>
+    <string name="about_section_features_title">Key Features</string>
+    <string name="about_feature_1_title">High Accuracy</string>
+    <string name="about_feature_1_desc">Achieves up to 82% accuracy with KNN and Naive Bayes models.</string>
+    <string name="about_feature_2_title">Fast Prediction</string>
+    <string name="about_feature_2_desc">Instant results using optimized algorithms.</string>
+    <string name="about_feature_3_title">Scalable &amp; Cost-Effective</string>
+    <string name="about_feature_3_desc">Built on open-source technologies to minimize costs.</string>
+    <string name="about_supervisors">Supervisors</string>
+    <string name="about_supervisor_1">Dr. George Anwar Karraz</string>
+    <string name="about_supervisor_1_title">Main Supervisor</string>
+    <string name="about_supervisor_1_email">T_gkarraz@svuonline.org</string>
+    <string name="about_supervisor_2">Dr. Majeda Al-Bakour</string>
+    <string name="about_supervisor_2_title">Co-Supervisor</string>
+    <string name="about_supervisor_2_email">T_mbakour@svuonline.org</string>
+    <string name="about_student">Student</string>
+    <string name="about_student_name">Hazem Khader Al-Haj Ahmid</string>
+    <string name="about_student_program">MSc Student - Web Science</string>
+    <string name="about_student_email">Hazem_82763@svuonline.org</string>
+    <string name="about_university">Syrian Virtual University</string>
+    <string name="about_ministry">Ministry of Higher Education - Syrian Arab Republic</string>
+    <string name="about_copyright">© 2026 Syrian Virtual University. All rights reserved.</string>
+    
+    <!-- Results Section -->
+    <string name="about_section_results_title">Results</string>
+    <string name="about_results_subtitle">Model Performance Comparison</string>
+    <string name="about_model_knn">KNN Model</string>
+    <string name="about_model_nb">Naive Bayes Model</string>
+    <string name="about_model_dt">Decision Tree Model</string>
+    <string name="about_model_knn_desc">Highest recall (94%) - Ideal for early detection</string>
+    <string name="about_model_nb_desc">Balanced and fast performance - Best for real-time applications</string>
+    <string name="about_model_dt_desc">Easy to interpret - Needs improvement with pruning</string>
+    <string name="about_label_accuracy">Accuracy</string>
+    <string name="about_label_precision">Precision</string>
+    <string name="about_label_recall">Recall</string>
+    <string name="about_label_f1">F1-Score</string>
+    
+    <!-- Key Findings -->
+    <string name="about_section_findings_title">Key Findings</string>
+    <string name="about_finding_1_title">Best for Early Detection</string>
+    <string name="about_finding_1_desc">KNN model achieved the highest recall (94%), making it optimal for early heart disease detection</string>
+    <string name="about_finding_2_title">Balanced Performance</string>
+    <string name="about_finding_2_desc">Naive Bayes provided balanced performance with high processing speed</string>
+    <string name="about_finding_3_title">Data Quality</string>
+    <string name="about_finding_3_desc">Data preprocessing and standardization were crucial in improving model performance</string>
+    <string name="about_finding_4_title">Future Development</string>
+    <string name="about_finding_4_desc">Performance can be improved using Random Forest, XGBoost, and larger datasets</string>
+
+    <!-- Risk Calculator -->
+    <string name="calculator_title">Heart Disease Risk Calculator</string>
+    <string name="calculator_subtitle">Enter the following data to get a risk assessment.</string>
+    <string name="calculator_button_predict">Calculate Risk</string>
+    <string name="calculator_section_basic">Basic Information</string>
+    <string name="calculator_section_vitals">Vital Signs</string>
+    <string name="calculator_section_tests">Advanced Tests</string>
+    <string name="hint_age">Age</string>
+    <string name="hint_sex">Sex</string>
+    <string name="hint_chest_pain">Chest Pain Type</string>
+    <string name="hint_trestbps">Resting Blood Pressure (mmHg)</string>
+    <string name="hint_cholesterol">Cholesterol (mg/dl)</string>
+    <string name="hint_fasting_blood_sugar">Fasting Blood Sugar > 120 mg/dl</string>
+    <string name="hint_rest_ecg">Resting Electrocardiographic Results</string>
+    <string name="hint_max_heart_rate">Maximum Heart Rate Achieved</string>
+    <string name="hint_exercise_angina">Exercise Induced Angina</string>
+    <string name="hint_oldpeak">ST Depression (Oldpeak)</string>
+    <string name="hint_slope">Slope of the peak exercise ST segment</string>
+    <string name="hint_ca">Number of major vessels</string>
+    <string name="hint_thal">Thalassemia</string>
+
+    <!-- Info Dialogs -->
+    <string name="info_title_age">About Age</string>
+    <string name="info_desc_age">Enter your age in years. Age is a significant risk factor for heart disease.</string>
+    <string name="info_title_sex">About Sex</string>
+    <string name="info_desc_sex">Select your gender. The risk of heart disease differs between men and women.</string>
+    <string name="info_title_chest_pain">About Chest Pain Type</string>
+    <string name="info_desc_chest_pain">Choose the type of chest pain you experience.\n- Typical Angina: Chest pain that occurs with exertion.\n- Atypical Angina: Chest pain not necessarily related to exertion.\n- Non-anginal Pain: Chest pain not related to the heart.\n- Asymptomatic: No chest pain.</string>
+    <string name="info_title_trestbps">About Resting Blood Pressure</string>
+    <string name="info_desc_trestbps">Enter your resting systolic blood pressure (the upper number). A normal value is less than 120 mmHg.</string>
+    <string name="info_title_cholesterol">About Cholesterol</string>
+    <string name="info_desc_cholesterol">Enter your serum cholesterol level. A desirable level is less than 200 mg/dl.</string>
+    <string name="info_title_fasting_blood_sugar">About Fasting Blood Sugar</string>
+    <string name="info_desc_fasting_blood_sugar">Indicate if your fasting blood sugar is greater than 120 mg/dl. A normal level is less than 100 mg/dl.</string>
+    <string name="info_title_rest_ecg">About Resting ECG</string>
+    <string name="info_desc_rest_ecg">Choose your resting electrocardiographic result.\n- Normal: No abnormalities.\n- ST-T wave abnormality: Minor changes that may indicate issues.\n- Left ventricular hypertrophy: May indicate a thickening of the heart muscle.</string>
+    <string name="info_title_max_heart_rate">About Maximum Heart Rate</string>
+    <string name="info_desc_max_heart_rate">Enter the highest heart rate achieved during a stress test.</string>
+    <string name="info_title_exercise_angina">About Exercise Induced Angina</string>
+    <string name="info_desc_exercise_angina">Indicate if you experience chest pain (angina) during exercise.</string>
+    <string name="info_title_oldpeak">About ST Depression (Oldpeak)</string>
+    <string name="info_desc_oldpeak">Enter the value of ST depression induced by exercise relative to rest. A normal value is close to 0.</string>
+    <string name="info_title_slope">About Slope of the ST segment</string>
+    <string name="info_desc_slope">Choose the slope of the peak exercise ST segment on the ECG.</string>
+    <string name="info_title_ca">About Number of Major Vessels</string>
+    <string name="info_desc_ca">Enter the number of major vessels (0-3) colored by fluoroscopy.</string>
+    <string name="info_title_thal">About Thalassemia</string>
+    <string name="info_desc_thal">Choose the result of the Thalassemia test (a blood disorder).\n- Normal: Normal blood flow.\n- Fixed defect: Part of the heart muscle permanently lacks adequate blood flow.\n- Reversible defect: Part of the heart muscle lacks adequate blood flow only during stress.</string>
+
+    <!-- Dropdown Options (Arrays) -->
+    <string-array name="sex_options">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+    <string-array name="chest_pain_options">
+        <item>Typical Angina</item>
+        <item>Atypical Angina</item>
+        <item>Non-anginal Pain</item>
+        <item>Asymptomatic</item>
+    </string-array>
+    <string-array name="boolean_options">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+    <string-array name="rest_ecg_options">
+        <item>Normal</item>
+        <item>ST-T wave abnormality</item>
+        <item>Left ventricular hypertrophy</item>
+    </string-array>
+    <string-array name="slope_options">
+        <item>Upsloping</item>
+        <item>Flat</item>
+        <item>Downsloping</item>
+    </string-array>
+    <string-array name="thal_options">
+        <item>Normal</item>
+        <item>Fixed defect</item>
+        <item>Reversible defect</item>
+    </string-array>
+
+    <!-- Results Activity -->
+    <string name="results_risk_level_title">Risk Level</string>
+    <string name="results_risk_description">Probability of having heart disease</string>
+    <string name="results_risk_low">Low</string>
+    <string name="results_risk_medium">Medium</string>
+    <string name="results_risk_high">High</string>
+    <string name="results_disease_probability">Probability of having heart disease</string>
+    <string name="results_model_comparison_title">Model Comparison</string>
+    <string name="results_model_knn">KNN Model</string>
+    <string name="results_model_nb">Naive Bayes Model</string>
+    <string name="results_model_dt">Decision Tree Model</string>
+    <string name="results_accuracy_template">Accuracy: %s</string>
+    <string name="results_confidence_template">Confidence: %.1f%%</string>
+    <string name="results_disclaimer">This system is for research purposes only and does not replace professional medical advice.</string>
+    <string name="results_button_reassess">New Assessment</string>
+    <string name="results_accuracy_knn">Accuracy: 82%</string>
+    <string name="results_accuracy_nb">Accuracy: 82%</string>
+    <string name="results_accuracy_dt">Accuracy: 70%</string>
+    <string name="risk_level_low">Low</string>
+    <string name="risk_level_moderate">Moderate</string>
+    <string name="risk_level_high">High</string>
+    <string name="results_label_precision">Precision</string>
+    <string name="results_label_recall">Recall</string>
+    <string name="results_label_f1_score">F1-Score</string>
+    <string name="results_section_charts_title">Visual Comparison</string>
+    <string name="results_section_findings_title">Key Findings</string>
+    <string name="results_finding_1_title">Best Model for Early Detection</string>
+    <string name="results_finding_1_desc">The KNN model demonstrated the highest recall, making it optimal for early detection of positive cases.</string>
+    <string name="results_finding_2_title">Balanced Performance</string>
+    <string name="results_finding_2_desc">The Naive Bayes model provided a balanced performance between accuracy and processing speed.</string>
+    <string name="results_finding_3_title">Data Quality</string>
+    <string name="results_finding_3_desc">Data preprocessing and standardization significantly improved model performance.</string>
+    <string name="results_finding_4_title">Future Development</string>
+    <string name="results_finding_4_desc">Performance can be enhanced by using larger datasets and deep learning techniques.</string>
+
+    <!-- Menu -->
+    <string name="menu_change_language">Change Language</string>
+    <string name="menu_language_arabic">العربية</string>
+    <string name="menu_close">Close</string>
+
+    <!-- Toasts & Errors -->
+    <string name="toast_language_feature">Language feature will be implemented later</string>
+    <string name="error_no_prediction_data">Error: No prediction data found.</string>
+    <string name="validation_error_proceed">Please correct the errors before proceeding</string>
+    <string name="validation_error_required">This field is required</string>
+    <string name="validation_error_whole_number">Please enter a valid whole number</string>
+    <string name="validation_error_valid_number">Please enter a valid number</string>
+
+</resources>

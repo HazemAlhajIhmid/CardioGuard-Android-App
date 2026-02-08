@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Background -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M0,0h108v108h-108z"/>
+    
+    <!-- Heart Shape -->
+    <path
+        android:fillColor="#FF6B6B"
+        android:pathData="M54,85 C45,75 25,60 25,45 C25,35 32,30 39,30 C44,30 49,33 54,38 C59,33 64,30 69,30 C76,30 83,35 83,45 C83,60 63,75 54,85 Z"/>
+    
+    <!-- Heart Gradient Effect -->
+    <path
+        android:fillColor="#FF4757"
+        android:fillAlpha="0.7"
+        android:pathData="M54,85 C58,78 68,68 75,55 C78,50 83,47 83,45 C83,42 81,38 78,36 C76,34 73,33 69,33 C64,33 59,36 54,41 L54,85 Z"/>
+    
+    <!-- Heartbeat Line -->
+    <path
+        android:strokeColor="#3DC7F4"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000"
+        android:pathData="M20,54 L35,54 L40,45 L45,63 L50,54 L65,54 L70,45 L75,60 L80,54 L88,54"/>
+</vector>

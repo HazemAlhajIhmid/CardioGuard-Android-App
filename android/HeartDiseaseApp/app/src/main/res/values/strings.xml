@@ -1,0 +1,206 @@
+<resources>
+    <!-- App & Activity Titles -->
+    <string name="app_name">CardioGuard</string>
+    <string name="title_activity_risk_calculator">حاسبة المخاطر</string>
+    <string name="title_activity_results">نتائج التقييم</string>
+    <string name="title_activity_about">حول المشروع</string>
+
+    <!-- Main Activity -->
+    <string name="main_header_title">الكشف المبكر عن أمراض القلب</string>
+    <string name="main_header_subtitle">نظام ذكي يعتمد على خوارزميات تعلم الآلة للتنبؤ بخطر الإصابة.</string>
+    <string name="main_section_model_accuracy">دقة النماذج</string>
+    <string name="main_section_dataset_info">معلومات مجموعة البيانات</string>
+    <string name="main_label_records">السجلات</string>
+    <string name="main_label_models">النماذج</string>
+    <string name="main_button_start_assessment">ابدأ التقييم الآن</string>
+    <string name="main_button_about">حول المشروع</string>
+
+    <!-- About Activity -->
+    <string name="about_title">حول مشروع CardioGuard</string>
+    <string name="about_description">هذا المشروع هو جزء من رسالة ماجستير في علوم البيانات، ويهدف إلى تطوير نظام ذكي للمساعدة في الكشف المبكر عن أمراض القلب.</string>
+    <string name="about_section_methodology_title">منهجية البحث</string>
+    <string name="about_methodology_1_title">جمع البيانات</string>
+    <string name="about_methodology_1_desc">تم استخدام مجموعة بيانات أمراض القلب من جامعة كاليفورنيا في إيرفاين (UCI).</string>
+    <string name="about_methodology_2_title">معالجة البيانات</string>
+    <string name="about_methodology_2_desc">تنظيف البيانات ومعالجة القيم المفقودة وتطبيع الميزات لتحسين أداء النماذج.</string>
+    <string name="about_methodology_3_title">تدريب النماذج</string>
+    <string name="about_methodology_3_desc">تم تدريب ثلاثة نماذج مختلفة لتعلم الآلة: K-Nearest Neighbors, Naive Bayes, و Decision Tree.</string>
+    <string name="about_methodology_4_title">التقييم</string>
+    <string name="about_methodology_4_desc">تقييم أداء النماذج باستخدام مقاييس الدقة، الاستدعاء، والمقياس F1.</string>
+    <string name="about_section_features_title">الميزات الرئيسية</string>
+    <string name="about_feature_1_title">دقة عالية</string>
+    <string name="about_feature_1_desc">تصل الدقة إلى 82% مع نماذج KNN و Naive Bayes.</string>
+    <string name="about_feature_2_title">تنبؤ سريع</string>
+    <string name="about_feature_2_desc">نتائج فورية باستخدام خوارزميات مُحسَّنة.</string>
+    <string name="about_feature_3_title">تكلفة قابلة للتطوير</string>
+    <string name="about_feature_3_desc">يعتمد على تقنيات مفتوحة المصدر لتقليل التكاليف.</string>
+    <string name="about_supervisors">المشرفون</string>
+    <string name="about_supervisor_1">Dr. George Anwar Karraz</string>
+    <string name="about_supervisor_1_title">المشرف الأساسي</string>
+    <string name="about_supervisor_1_email">T_gkarraz@svuonline.org</string>
+    <string name="about_supervisor_2">Dr. Majeda Al-Bakour</string>
+    <string name="about_supervisor_2_title">المشرف المشارك</string>
+    <string name="about_supervisor_2_email">T_mbakour@svuonline.org</string>
+    <string name="about_student">الطالب</string>
+    <string name="about_student_name">Hazem Khader Al-Haj Ahmid</string>
+    <string name="about_student_program">طالب ماجستير - علوم الويب</string>
+    <string name="about_student_email">Hazem_82763@svuonline.org</string>
+    <string name="about_university">الجامعة الافتراضية السورية</string>
+    <string name="about_ministry">وزارة التعليم العالي - الجمهورية العربية السورية</string>
+    <string name="about_copyright">© 2026 Syrian Virtual University. All rights reserved.</string>
+    
+    <!-- Results Section -->
+    <string name="about_section_results_title">النتائج</string>
+    <string name="about_results_subtitle">مقارنة أداء النماذج</string>
+    <string name="about_model_knn">نموذج KNN</string>
+    <string name="about_model_nb">نموذج Naive Bayes</string>
+    <string name="about_model_dt">نموذج Decision Tree</string>
+    <string name="about_model_knn_desc">أعلى معدل استرجاع (94%) - مثالي للكشف المبكر</string>
+    <string name="about_model_nb_desc">أداء متوازن وسريع - الأفضل للتطبيقات الفورية</string>
+    <string name="about_model_dt_desc">سهل التفسير - يحتاج إلى تحسين بالتقليم</string>
+    <string name="about_label_accuracy">الدقة</string>
+    <string name="about_label_precision">الاستدقاق</string>
+    <string name="about_label_recall">الاستدعاء</string>
+    <string name="about_label_f1">المقياس F1</string>
+    
+    <!-- Key Findings -->
+    <string name="about_section_findings_title">الاستنتاجات الرئيسية</string>
+    <string name="about_finding_1_title">الأفضل للكشف المبكر</string>
+    <string name="about_finding_1_desc">نموذج KNN حقق أعلى معدل استرجاع (94%) مما يجعله الأمثل للكشف المبكر عن أمراض القلب</string>
+    <string name="about_finding_2_title">الأداء المتوازن</string>
+    <string name="about_finding_2_desc">Naive Bayes قدم أداءً متوازناً مع سرعة عالية في المعالجة</string>
+    <string name="about_finding_3_title">جودة البيانات</string>
+    <string name="about_finding_3_desc">معالجة البيانات والمعايرة كانت حاسمة في تحسين أداء النماذج</string>
+    <string name="about_finding_4_title">التطوير المستقبلي</string>
+    <string name="about_finding_4_desc">يمكن تحسين الأداء باستخدام Random Forest وXGBoost وبيانات أكبر</string>
+
+    <!-- Risk Calculator -->
+    <string name="calculator_title">حاسبة مخاطر أمراض القلب</string>
+    <string name="calculator_subtitle">أدخل البيانات التالية للحصول على تقييم للمخاطر.</string>
+    <string name="calculator_button_predict">احسب نسبة الخطر</string>
+    <string name="calculator_section_basic">معلومات أساسية</string>
+    <string name="calculator_section_vitals">القياسات الحيوية</string>
+    <string name="calculator_section_tests">الفحوصات المتقدمة</string>
+    <string name="hint_age">العمر</string>
+    <string name="hint_sex">الجنس</string>
+    <string name="hint_chest_pain">نوع ألم الصدر</string>
+    <string name="hint_trestbps">ضغط الدم الانقباضي (mmHg)</string>
+    <string name="hint_cholesterol">الكوليسترول (mg/dl)</string>
+    <string name="hint_fasting_blood_sugar">سكر الدم الصيامي > 120 mg/dl</string>
+    <string name="hint_rest_ecg">تخطيط القلب الكهربائي أثناء الراحة</string>
+    <string name="hint_max_heart_rate">أقصى معدل لضربات القلب</string>
+    <string name="hint_exercise_angina">ذبحة صدرية ناتجة عن ممارسة الرياضة</string>
+    <string name="hint_oldpeak">انخفاض ST (Oldpeak)</string>
+    <string name="hint_slope">ميل قطعة ST عند ذروة التمرين</string>
+    <string name="hint_ca">عدد الأوعية الدموية الرئيسية</string>
+    <string name="hint_thal">الثلاسيميا</string>
+
+    <!-- Info Dialogs -->
+    <string name="info_title_age">معلومات عن العمر</string>
+    <string name="info_desc_age">أدخل عمرك بالسنوات. العمر هو عامل خطر مهم لأمراض القلب.</string>
+    <string name="info_title_sex">معلومات عن الجنس</string>
+    <string name="info_desc_sex">اختر جنسك. تختلف مخاطر الإصابة بأمراض القلب بين الرجال والنساء.</string>
+    <string name="info_title_chest_pain">معلومات عن ألم الصدر</string>
+    <string name="info_desc_chest_pain">اختر نوع ألم الصدر الذي تشعر به.\n- ذبحة صدرية نموذجية: ألم في الصدر يحدث مع المجهود.\n- ذبحة صدرية غير نموذجية: ألم في الصدر لا يرتبط بالضرورة بالمجهود.\n- ألم غير ذبحي: ألم في الصدر لا علاقة له بالقلب.\n- بدون أعراض: لا يوجد ألم في الصدر.</string>
+    <string name="info_title_trestbps">معلومات عن ضغط الدم</string>
+    <string name="info_desc_trestbps">أدخل قيمة ضغط الدم الانقباضي أثناء الراحة (الرقم الأعلى). القيمة الطبيعية أقل من 120 مم زئبق.</string>
+    <string name="info_title_cholesterol">معلومات عن الكوليسترول</string>
+    <string name="info_desc_cholesterol">أدخل مستوى الكوليسترول في الدم. المستوى المرغوب فيه أقل من 200 ملغ/ديسيلتر.</string>
+    <string name="info_title_fasting_blood_sugar">معلومات عن سكر الدم الصيامي</string>
+    <string name="info_desc_fasting_blood_sugar">حدد ما إذا كان مستوى السكر في الدم أثناء الصيام أعلى من 120 ملغ/ديسيلتر. المستوى الطبيعي أقل من 100 ملغ/ديسيلتر.</string>
+    <string name="info_title_rest_ecg">معلومات عن تخطيط القلب</string>
+    <string name="info_desc_rest_ecg">اختر نتيجة تخطيط القلب الكهربائي أثناء الراحة.\n- طبيعي: لا توجد تشوهات.\n- شذوذ في موجة ST-T: تغييرات طفيفة قد تشير إلى مشاكل.\n- تضخم البطين الأيسر: قد يشير إلى سماكة عضلة القلب.</string>
+    <string name="info_title_max_heart_rate">معلومات عن أقصى معدل لضربات القلب</string>
+    <string name="info_desc_max_heart_rate">أدخل أعلى معدل لضربات القلب تم الوصول إليه أثناء اختبار الإجهاد.</string>
+    <string name="info_title_exercise_angina">معلومات عن الذبحة الصدرية الناتجة عن ممارسة الرياضة</string>
+    <string name="info_desc_exercise_angina">حدد ما إذا كنت تعاني من ألم في الصدر (ذبحة صدرية) أثناء ممارسة الرياضة.</string>
+    <string name="info_title_oldpeak">معلومات عن انخفاض ST (Oldpeak)</string>
+    <string name="info_desc_oldpeak">أدخل قيمة انخفاض قطعة ST في تخطيط القلب أثناء اختبار الإجهاد. القيمة الطبيعية قريبة من 0.</string>
+    <string name="info_title_slope">معلومات عن ميل قطعة ST</string>
+    <string name="info_desc_slope">اختر شكل ميل قطعة ST في تخطيط القلب أثناء ذروة التمرين.</string>
+    <string name="info_title_ca">معلومات عن عدد الأوعية الدموية الرئيسية</string>
+    <string name="info_desc_ca">أدخل عدد الأوعية الدموية الرئيسية (من 0 إلى 3) التي تظهر فيها تضيقات في تصوير الأوعية.</string>
+    <string name="info_title_thal">معلومات عن الثلاسيميا</string>
+    <string name="info_desc_thal">اختر نتيجة اختبار الثلاسيميا (اضطراب في الدم).\n- طبيعي: تدفق الدم طبيعي.\n- عيب ثابت: جزء من عضلة القلب لا يتلقى تدفق دم كافٍ بشكل دائم.\n- عيب قابل للعكس: جزء من عضلة القلب لا يتلقى تدفق دم كافٍ فقط أثناء الإجهاد.</string>
+
+    <!-- Dropdown Options (Arrays) -->
+    <string-array name="sex_options">
+        <item>أنثى</item>
+        <item>ذكر</item>
+    </string-array>
+    <string-array name="chest_pain_options">
+        <item>ذبحة صدرية نموذجية</item>
+        <item>ذبحة صدرية غير نموذجية</item>
+        <item>ألم غير ذبحي</item>
+        <item>بدون أعراض</item>
+    </string-array>
+    <string-array name="boolean_options">
+        <item>لا</item>
+        <item>نعم</item>
+    </string-array>
+    <string-array name="rest_ecg_options">
+        <item>طبيعي</item>
+        <item>شذوذ في موجة ST-T</item>
+        <item>تضخم البطين الأيسر</item>
+    </string-array>
+    <string-array name="slope_options">
+        <item>منحدر للأعلى</item>
+        <item>مسطح</item>
+        <item>منحدر للأسفل</item>
+    </string-array>
+    <string-array name="thal_options">
+        <item>طبيعي</item>
+        <item>عيب ثابت</item>
+        <item>عيب قابل للعكس</item>
+    </string-array>
+
+    <!-- Results Activity -->
+    <string name="results_risk_level_title">مستوى المخاطر</string>
+    <string name="results_risk_description">احتمالية الإصابة بمرض القلب</string>
+    <string name="results_risk_low">منخفض</string>
+    <string name="results_risk_medium">متوسط</string>
+    <string name="results_risk_high">مرتفع</string>
+    <string name="results_disease_probability">احتمالية الإصابة بمرض القلب</string>
+    <string name="results_model_comparison_title">مقارنة النماذج</string>
+    <string name="results_model_knn">نموذج KNN</string>
+    <string name="results_model_nb">نموذج Naive Bayes</string>
+    <string name="results_model_dt">نموذج Decision Tree</string>
+    <string name="results_accuracy_template">الدقة: %s</string>
+    <string name="results_confidence_template">نسبة الثقة: %.1f%%</string>
+    <string name="results_disclaimer">هذا النظام للأغراض البحثية فقط ولا يحل محل الاستشارة الطبية المتخصصة.</string>
+    <string name="results_button_reassess">إجراء تقييم جديد</string>
+    <string name="results_accuracy_knn">الدقة: 82%</string>
+    <string name="results_accuracy_nb">الدقة: 82%</string>
+    <string name="results_accuracy_dt">الدقة: 70%</string>
+    <string name="risk_level_low">منخفض</string>
+    <string name="risk_level_moderate">متوسط</string>
+    <string name="risk_level_high">مرتفع</string>
+    <string name="results_label_precision">الدقة (Precision)</string>
+    <string name="results_label_recall">الاستدعاء (Recall)</string>
+    <string name="results_label_f1_score">مقياس F1</string>
+    <string name="results_section_charts_title">مقارنة مرئية</string>
+    <string name="results_section_findings_title">الاستنتاجات الرئيسية</string>
+    <string name="results_finding_1_title">أفضل نموذج للكشف المبكر</string>
+    <string name="results_finding_1_desc">أظهر نموذج KNN أعلى قيمة استدعاء (Recall)، مما يجعله الأمثل للكشف المبكر عن الحالات الإيجابية.</string>
+    <string name="results_finding_2_title">أداء متوازن</string>
+    <string name="results_finding_2_desc">قدم نموذج Naive Bayes أداءً متوازناً بين الدقة وسرعة المعالجة.</string>
+    <string name="results_finding_3_title">جودة البيانات</string>
+    <string name="results_finding_3_desc">أثرت عملية معالجة البيانات بشكل كبير في تحسين أداء النماذج.</string>
+    <string name="results_finding_4_title">تطوير مستقبلي</string>
+    <string name="results_finding_4_desc">يمكن تحسين الأداء باستخدام مجموعات بيانات أكبر وتقنيات تعلم عميق.</string>
+
+    <!-- Menu -->
+    <string name="menu_change_language">تغيير اللغة</string>
+    <string name="menu_language_english">English</string>
+    <string name="menu_language_arabic">العربية</string>
+    <string name="menu_close">إغلاق</string>
+
+    <!-- Toasts & Errors -->
+    <string name="toast_language_feature">سيتم تنفيذ ميزة تغيير اللغة لاحقاً</string>
+    <string name="error_no_prediction_data">خطأ: لم يتم العثور على بيانات التنبؤ.</string>
+    <string name="validation_error_proceed">يرجى تصحيح الأخطاء قبل المتابعة</string>
+    <string name="validation_error_required">هذا الحقل مطلوب</string>
+    <string name="validation_error_whole_number">الرجاء إدخال رقم صحيح صالح</string>
+    <string name="validation_error_valid_number">الرجاء إدخال رقم صالح</string>
+
+</resources>

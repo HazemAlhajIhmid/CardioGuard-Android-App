@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".AboutActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        app:title="@string/title_activity_about"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- University Badge -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/background">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_university"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_ministry"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_secondary"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Research Team -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="24dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <!-- Student -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/primary_light"
+                        android:padding="16dp"
+                        android:layout_marginBottom="16dp">
+                        
+                        <TextView
+                            android:text="@string/about_student"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="@string/about_student_name"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="@string/about_student_program"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary"
+                            android:layout_marginTop="2dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="@string/about_student_email"
+                            android:textSize="11sp"
+                            android:textColor="@color/text_secondary"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    
+                    <!-- Supervisors -->
+                    <TextView
+                        android:text="@string/about_supervisors"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/secondary_light"
+                        android:padding="12dp"
+                        android:layout_marginBottom="8dp">
+                        <TextView
+                            android:text="@string/about_supervisor_1"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="@string/about_supervisor_1_title"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary"
+                            android:layout_marginTop="2dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="@string/about_supervisor_1_email"
+                            android:textSize="11sp"
+                            android:textColor="@color/text_secondary"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/secondary_light"
+                        android:padding="12dp">
+                        <TextView
+                            android:text="@string/about_supervisor_2"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="@string/about_supervisor_2_title"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary"
+                            android:layout_marginTop="2dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="@string/about_supervisor_2_email"
+                            android:textSize="11sp"
+                            android:textColor="@color/text_secondary"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Methodology Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_section_methodology_title"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:layout_marginTop="8dp">
+
+                <!-- Data Collection -->
+                <com.google.android.material.card.MaterialCardView style="@style/AboutCard">
+                    <LinearLayout style="@style/DashboardCardContent">
+                        <ImageView style="@style/InfoIcon" android:src="@drawable/ic_data_collection"/>
+                        <TextView style="@style/DashboardCardTitle" android:text="@string/about_methodology_1_title" android:layout_marginTop="8dp"/>
+                        <TextView style="@style/DashboardCardValue" android:text="@string/about_methodology_1_desc" android:textSize="12sp" android:textStyle="normal"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <!-- Data Preprocessing -->
+                <com.google.android.material.card.MaterialCardView style="@style/AboutCard">
+                    <LinearLayout style="@style/DashboardCardContent">
+                        <ImageView style="@style/InfoIcon" android:src="@drawable/ic_data_preprocessing"/>
+                        <TextView style="@style/DashboardCardTitle" android:text="@string/about_methodology_2_title" android:layout_marginTop="8dp"/>
+                        <TextView style="@style/DashboardCardValue" android:text="@string/about_methodology_2_desc" android:textSize="12sp" android:textStyle="normal"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <!-- Model Training -->
+                <com.google.android.material.card.MaterialCardView style="@style/AboutCard">
+                    <LinearLayout style="@style/DashboardCardContent">
+                        <ImageView style="@style/InfoIcon" android:src="@drawable/ic_model_training"/>
+                        <TextView style="@style/DashboardCardTitle" android:text="@string/about_methodology_3_title" android:layout_marginTop="8dp"/>
+                        <TextView style="@style/DashboardCardValue" android:text="@string/about_methodology_3_desc" android:textSize="12sp" android:textStyle="normal"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <!-- Evaluation -->
+                <com.google.android.material.card.MaterialCardView style="@style/AboutCard">
+                    <LinearLayout style="@style/DashboardCardContent">
+                        <ImageView style="@style/InfoIcon" android:src="@drawable/ic_evaluation"/>
+                        <TextView style="@style/DashboardCardTitle" android:text="@string/about_methodology_4_title" android:layout_marginTop="8dp"/>
+                        <TextView style="@style/DashboardCardValue" android:text="@string/about_methodology_4_desc" android:textSize="12sp" android:textStyle="normal"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </GridLayout>
+
+            <!-- Key Features Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_section_features_title"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="24dp"/>
+                
+             <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="@color/primary">
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/about_feature_1_title"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/about_feature_2_title"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/about_feature_3_title"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Results Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_section_results_title"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="24dp"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_results_subtitle"
+                android:textSize="16sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- KNN Model -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="12dp"
+                app:cardBackgroundColor="#E3F2FD">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:text="@string/about_model_knn"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12dp">
+                        
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:text="@string/about_label_accuracy"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:text="82%"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/primary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:text="@string/about_label_precision"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:text="78%"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/primary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:text="@string/about_label_recall"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:text="94%"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/primary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:text="@string/about_label_f1"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:text="85%"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/primary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    
+                    <TextView
+                        android:text="@string/about_model_knn_desc"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Naive Bayes Model -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="12dp"
+                app:cardBackgroundColor="#E8F5E9">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:text="@string/about_model_nb"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#4CAF50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12dp">
+                        
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:text="@string/about_label_accuracy"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:text="82%"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:textColor="#4CAF50"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:text="@string/about_label_precision"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:text="79%"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="#4CAF50"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:text="@string/about_label_recall"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:text="91%"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="#4CAF50"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:text="@string/about_label_f1"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:text="85%"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="#4CAF50"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    
+                    <TextView
+                        android:text="@string/about_model_nb_desc"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Decision Tree Model -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="12dp"
+                app:cardBackgroundColor="#FFF3E0">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:text="@string/about_model_dt"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#FF9800"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12dp">
+                        
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:text="@string/about_label_accuracy"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:text="70%"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:textColor="#FF9800"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:text="@string/about_label_precision"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:text="70%"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="#FF9800"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:text="@string/about_label_recall"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:text="79%"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="#FF9800"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:text="@string/about_label_f1"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:text="74%"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="#FF9800"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    
+                    <TextView
+                        android:text="@string/about_model_dt_desc"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Key Findings Section -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                android:layout_marginTop="24dp"
+                app:cardBackgroundColor="@color/primary">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    
+                    <TextView
+                        android:text="@string/about_section_findings_title"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_marginBottom="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    
+                    <!-- Finding 1 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@android:color/white"
+                        android:backgroundTint="#80FFFFFF"
+                        android:padding="12dp"
+                        android:layout_marginBottom="12dp">
+                        <TextView
+                            android:text="@string/about_finding_1_title"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="@string/about_finding_1_desc"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    
+                    <!-- Finding 2 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@android:color/white"
+                        android:backgroundTint="#80FFFFFF"
+                        android:padding="12dp"
+                        android:layout_marginBottom="12dp">
+                        <TextView
+                            android:text="@string/about_finding_2_title"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="@string/about_finding_2_desc"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    
+                    <!-- Finding 3 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@android:color/white"
+                        android:backgroundTint="#80FFFFFF"
+                        android:padding="12dp"
+                        android:layout_marginBottom="12dp">
+                        <TextView
+                            android:text="@string/about_finding_3_title"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="@string/about_finding_3_desc"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    
+                    <!-- Finding 4 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@android:color/white"
+                        android:backgroundTint="#80FFFFFF"
+                        android:padding="12dp">
+                        <TextView
+                            android:text="@string/about_finding_4_title"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="@string/about_finding_4_desc"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Copyright -->
+            <TextView
+                android:text="@string/about_copyright"
+                android:textSize="11sp"
+                android:textColor="@color/text_secondary"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
