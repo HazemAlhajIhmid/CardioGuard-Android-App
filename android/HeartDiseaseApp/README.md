@@ -15,7 +15,8 @@
 | 🖥️ Backend | ASP.NET Core | **[Backend API](https://github.com/HazemAlhajIhmid/CardioGuard-Backend-API)** | ✅ Live |
 | 📱 Android | Kotlin | **[Android App](https://github.com/HazemAlhajIhmid/CardioGuard-Android-App)** | ✅ Live |
 
-**🌐 Live Demo:** [heart-disease-detection.vercel.app](https://heart-disease-detection.vercel.app/)
+**🌐 Live Demo:** [heart-disease-detection.vercel.app](https://heart-disease-detection.vercel.app/)  
+**📥 Download APK:** [CardioGuard v1.2.1](https://github.com/HazemAlhajIhmid/CardioGuard-Android-App/releases/tag/V1.2.1)
 
 </div>
 
