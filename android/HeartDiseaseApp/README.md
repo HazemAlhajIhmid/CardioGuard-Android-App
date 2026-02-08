@@ -163,15 +163,15 @@ File → Open → اختر مجلد HeartDiseaseApp
 
 ### معلومات البحث 🎓
 
-**الباحث**: [اسم الطالب]  
-**الإشراف**: [أسماء المشرفين]  
+**الباحث**: hazem alhajIhmid  
+**الإشراف**:  Dr. George Anwar Karraz   and  Dr. Majeda Al-Bakour
 **الجامعة**: الجامعة الافتراضية السورية  
 **الوزارة**: وزارة التعليم العالي  
 
 **البريد الإلكتروني**:
-- الباحث: research@example.com
-- المشرف الأول: supervisor1@example.com
-- المشرف الثاني: supervisor2@example.com
+- الباحث: Hazem_82763@svuonline.org
+- المشرف الأول: T_gkarraz@svuonline.org
+- المشرف الثاني: T_mbakour@svuonline.org
 
 ### الإصدارات 📅
 
@@ -207,8 +207,8 @@ File → Open → اختر مجلد HeartDiseaseApp
 هذا المشروع للأغراض البحثية فقط ولا يحل محل الاستشارة الطبية المتخصصة.
 
 ### الدعم الفني 📞
-- **البريد الإلكتروني**: support@cardioguard.example.com
-- **الموقع**: https://cardioguard.example.com
+- **البريد الإلكتروني**: hazem1990alhaj@gmail.com
+- **الموقع**: https://master-thesis-cardio-guard-early-de.vercel.app
 
 ### ملاحظات مهمة ⚠️
 1. **هذا النظام للأغراض البحثية فقط**
